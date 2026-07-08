@@ -1,22 +1,194 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว</title>
 
-    <title>ประวัติส่วนตัว</title>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mali',cursive;
+}
+
+body{
+background:linear-gradient(-45deg,#ff9ecf,#ffd6ec,#8fd3ff,#b7e4ff);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+color:#fff;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+background:rgba(255,255,255,.2);
+backdrop-filter:blur(10px);
+padding:18px;
+text-align:center;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff4fa3;
+}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:40px auto;
+}
+
+.card{
+background:rgba(255,255,255,.92);
+border-radius:25px;
+padding:35px;
+color:#555;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.profile{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+}
+
+.profile img{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid #fff;
+object-fit:cover;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.info{
+flex:1;
+min-width:280px;
+}
+
+.info h1{
+color:#ff5ca8;
+margin-bottom:20px;
+}
+
+.info p{
+font-size:18px;
+margin:12px 0;
+line-height:1.8;
+}
+
+.skill{
+margin-top:25px;
+}
+
+.bar{
+background:#ddd;
+height:18px;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(to right,#ff6ec4,#6ec6ff);
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:white;
+}
+
+</style>
 
 </head>
 
 <body>
-  
-<h1>ประวัติส่วนตัว</h1>
 
-<p>
-  ชื่อ น.ส.กันย์สินี สุขโข <br>
-  ชื่อเล่น เอิงเอย <br>
-  โรงเรียนพานทอง <br>
-</p>
+<nav>
+<a href="index.html">🏠 หน้าหลัก</a>
+<a href="profile.html">👤 ประวัติส่วนตัว</a>
+<a href="education.html">🎓 การศึกษา</a>
+<a href="award.html">🏆 ผลงาน</a>
+<a href="contact.html">📞 ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile">
+
+<img src="images/myphoto.jpg" alt="รูปของฉัน">
+
+<div class="info">
+
+<h1>💖 ข้อมูลส่วนตัว</h1>
+
+<p><b>👤 ชื่อ :</b> นางสาว กันย์สินี สุขโข</p>
+
+<p><b>🎂 วันเกิด :</b> 20 เดือน มีนาคม พ.ศ. 2552</p>
+
+<p><b>🎉 อายุ :</b> 17 ปี</p>
+
+<p><b>🏫 โรงเรียน :</b> พานทอง</p>
+
+<p><b>📚 แผนการเรียน :</b> สายวิทย์-คณิต</p>
+
+<p><b>❤️ งานอดิเรก :</b> ฟังเพลง ดูหนัง อ่านหนังสือ เล่นเกม</p>
+
+<p><b>⭐ ความสามารถพิเศษ :</b> วาดรูป เรียนรู้ไว ปั้นโมเดลสิ่งของขั้นพื้นฐาน</p>
+
+<p><b>💡 คติประจำใจ :</b> "ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"</p>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h2 style="color:#ff5ca8;">💻 ทักษะ (Skills)</h2>
+
+<p>HTML</p>
+<div class="bar"><div class="fill" style="width:80%;"></div></div>
+
+<p>Canva</p>
+<div class="bar"><div class="fill" style="width:90%;"></div></div>
+
+<p>Microsoft Office</p>
+<div class="bar"><div class="fill" style="width:85%;"></div></div>
+
+<p>การทำงานเป็นทีม</p>
+<div class="bar"><div class="fill" style="width:95%;"></div></div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+🌸 My Portfolio 2026 🌸
+</footer>
+
 </body>
-
 </html>
